@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".no_internet_ac"
+    android:id="@+id/no_internet_connection_main_relativ">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_internet_connection"
+                android:layout_marginTop="?actionBarSize"
+                android:id="@+id/no_internet_connection_icon"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/no_internet_connection_icon"
+                android:textColor="@color/textcolor1"
+                android:text="@string/no_internet_connection_text"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"
+                android:textSize="@dimen/text_view_text_size12"
+                android:id="@+id/no_internet_connection_text"/>
+
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/no_internet_connection_text"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:text="@string/no_internet_connection_button"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/button_text_text_size10"
+                android:drawableLeft="@drawable/re_try_icon"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/no_internet_connection_button_background"
+                android:onClick="onclick_retry_connect_to_Internet"/>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

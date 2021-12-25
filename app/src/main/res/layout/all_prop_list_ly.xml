@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:padding="3dp"
+    android:background="#FFF">
+
+
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:background="@drawable/prop_all_border_background_ly"
+        android:elevation="5dp"
+        android:id="@+id/prop_all_ly_liner"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/profile_icon"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/image_view_all_prop_grid_ly"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/is"
+                android:text="رضا فرازی"
+                android:textColor="@color/textcolor1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:textSize="10dp"
+                android:layout_margin="1dp"
+                android:id="@+id/text_view_1_all_prop_grid_ly"
+                android:textAlignment="center" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/is"
+                    android:text="تومان"
+                    android:textColor="#689f38"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:textSize="10dp"
+                    android:layout_margin="1dp"
+                    android:id="@+id/text_view_4_all_prop_grid_ly"
+                    android:layout_below="@id/text_view_1_all_prop_grid_ly"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/is"
+                    android:text="18000"
+                    android:textColor="#689f38"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:textSize="10dp"
+                    android:layout_margin="1dp"
+                    android:id="@+id/text_view_2_all_prop_grid_ly"
+                    android:layout_below="@id/text_view_1_all_prop_grid_ly"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/is"
+                android:text="5 ساعت دیگر"
+                android:textColor="#464545"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:textSize="10dp"
+                android:layout_margin="1dp"
+                android:id="@+id/text_view_3_all_prop_grid_ly"
+                android:layout_below="@id/text_view_2_all_prop_grid_ly"
+                android:textAlignment="center" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gagit.snapp.osta.ostasnappgadget">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_s"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/no_action_bar_1">
+        <activity android:name=".must_update"></activity>
+        <activity android:name=".Profile_web_viewes_ac" />
+        <activity android:name=".Access_is_false_ac" />
+        <activity
+            android:name=".my_props_one_item_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat_ac"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Show_ditales_N_price_ac"
+            android:label="@string/title_activity_show_ditales__n_price_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Show_Proposal_ditales_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N_Proposal_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog_theme" />
+        <activity
+            android:name=".white_for_frist_start_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sharj_card_web_view_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sharj_card_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".money_rate_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".m_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sms2_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".logo_ac"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sms_panle_ac"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".no_internet_ac"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

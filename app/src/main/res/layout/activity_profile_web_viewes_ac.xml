@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_web_viewes_ac">
+
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        layout="@layout/header_m_ac"
+        android:id="@+id/header_profile_web_viewes_ac"/>
+
+
+
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_profile_web_viewes_ac"
+        android:id="@+id/web_view_profile_web_views_ac"/>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".must_update"
+    android:background="@color/colorPrimaryDark">
+
+
+
+
+    <include
+        layout="@layout/header_m_ac"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/header_must_update" />
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/header_must_update"
+        android:layout_margin="15dp"
+        android:background="@drawable/border_white"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textDirection="rtl"
+        android:layoutDirection="rtl">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="12dp"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="نسخه جدید"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/is"
+            android:textSize="12dp"
+            android:textColor="#666666"
+            android:text="همکار گرامی سلام\nنسخه جدیدی از اپلیکیشن همکار اسنپ گجت منتشر شده است که توصیه می کنیم حتما برنامه را به روز رسانی کرده تا با مشکل مواجه نشده و بتوانید با خیال راحت به فعالیت ادامه دهید"
+            android:layout_margin="5dp"/>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="نسخه فعلی : "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:textColor="#666666"
+                android:text="1.2"
+                android:id="@+id/your_update_must_update"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="آخرین به روز رسانی منشتر شده : "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"
+                android:textColor="#666666"
+                android:text="2"
+                android:id="@+id/countinu_update_must_update"/>
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_btn_background"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:text="@string/update_btn"
+            android:textColor="#FFF"
+            android:fontFamily="@font/is"
+            android:textSize="12dp"
+            android:onClick="onclick_update_btn"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

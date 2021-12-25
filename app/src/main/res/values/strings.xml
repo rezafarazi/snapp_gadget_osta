@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">همکار اسنپ گجت</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBNYKUpt0PL3coT35DQfFnMO-8Oc6a-zH4</string>
+    <string name="login">ورود</string>
+    <string name="sign_in">حساب جدید</string>
+    <string name="no_internet_connection_text">لطفا از اتصال خود به اینترنت مطمئن شوید</string>
+    <string name="no_internet_connection_button">تلاش دوباره</string>
+    <string name="log_in_by_mobile">موبایل</string>
+    <string name="or">یا</string>
+    <string name="email_address">آدرس ایمیل</string>
+    <string name="password">رمز عبور</string>
+    <string name="forget_password">رمز خود را فراموش کرده ام</string>
+    <string name="full_name">نام کامل</string>
+    <string name="Check_fildes">لطفا همه مشخصات خود را کامل کنید</string>
+    <string name="Enter_Your_Phone_Number">لطفا شماره تلفن خود را وارد کنید</string>
+    <string name="Enter_Your_Phone_Number_Hint">09000000000</string>
+    <string name="Enter_Your_Phone_Number_Done">تایید</string>
+    <string name="Plase_wite_Sms">لطفا پس از دریافت پیامک کد را داخل کادر بالا وارد کنید</string>
+    <string name="Password_invalde">اعداد وارد شده نا معتبر می باشد</string>
+    <string name="number_is_false">شماره ام را اشتباه وارد کرده ام</string>
+    <string name="shaps">1234</string>
+    <string name="en">English</string>
+    <string name="fa">فارسی</string>
+    <string name="Home">خانه</string>
+    <string name="My_List">لیست من</string>
+    <string name="My_profile">حساب من</string>
+    <string name="Search">جست و جو</string>
+    <string name="pay_money">شارژ حساب</string>
+
+
+    <!-- ITEMS Start-->
+    <string name="Kitchen">آشپزخانه</string>
+    <string name="Catering">پذیرایی و مراسمات</string>
+    <string name="Medicine_and_Veterinary">پزشکی و دامپزکشی</string>
+    <string name="Installations">تاسیسات</string>
+    <string name="Transportation">خودرو و حمل و نقل</string>
+    <string name="Decoration_and_building">دکوراسیون و ساختمانی</string>
+    <string name="Cleaning">شستشو و نظافت</string>
+    <string name="Mobile_and_Pc">موبایل و کامپیوتر</string>
+    <string name="new_price">سفارش جدید</string>
+    <string name="done">انجام شد</string>
+    <string name="Back">برگشت</string>
+    <string name="to_day">امروز</string>
+    <string name="To_Next_Day">فردا</string>
+    <string name="Job">کار</string>
+    <string name="Phone_Number">شماره تلفن</string>
+    <string name="money_now">حساب فعلی</string>
+    <string name="Help">راهنما</string>
+    <string name="Factor">فاکتورها</string>
+    <string name="Share">ارسال</string>
+    <string name="Help_App">راهنمای برنامه</string>
+    <string name="For_Help">برای کمک از برنامه شما می توانید روی این گزینه کلیک کنید</string>
+    <string name="Show_profile">برای مشاهده و تنظیمات حساب کاربری می توانید از این گزینه استفاده کنید</string>
+    <string name="Show_list_help">نمایش لیست تمام خدماتی که من از اسنپ گجت گرفتم</string>
+    <string name="New_price_help">برای سفارش خدمت جدید می توانید از این گزینه استفاده کنید</string>
+    <string name="show_all_factor">برای نمایش فاکتورها می توانید از این گزینه استفاده کنید</string>
+    <string name="Items">آیتم ها</string>
+    <string name="You_Chosee_A_Item_Of_this_Page">شما می توانید از این صفحه ایتم مورد نظر خودرا انتخاب کنید</string>
+    <string name="Report">نظر منفی</string>
+    <string name="Like">امتیاز مثبت</string>
+    <string name="Call">تماس</string>
+    <string name="Themes">طرح ها</string>
+    <string name="Pay">شارژ حساب</string>
+    <string name="Web_Site">وب سایت</string>
+    <string name="Rating">امتیاز دهی به برنامه</string>
+    <string name="Send_Request">ارسال نظر</string>
+    <string name="Language">زبان</string>
+    <string name="color_code">#102030</string>
+    <string name="Chosee_color">لطفا رنگ مورد نظر خود را انتخاب کنید</string>
+
+    <!--colors-->
+    <string name="Default">پیش فرض</string>
+    <string name="Purple">بنفش</string>
+    <string name="Blue">آبی</string>
+    <string name="Green">سبز</string>
+    <string name="Light_Green">سبز روشن</string>
+    <string name="Orange">نارنجی</string>
+    <string name="Gray">خاکستری</string>
+    <!--colors-->
+
+
+    <string name="exit">خروج</string>
+    <string name="Sended">ارسال شد</string>
+    <string name="Check_NetWork">لطفا از اتصال خود به اینترنت اتطمینان حاصل فرمایید</string>
+    <string name="exit_from_acc">خارج شدن از حساب</string>
+    <string name="send_command">دیدگاه خود را فقط با 30 کلمه به ما ارسال کنید</string>
+
+
+    <string name="defulte_address">آدرس پیش فرض جدید</string>
+    <string name="alert">هشدار</string>
+    <string name="do_you_are_clear">با این کار آدرس قبلی حذف می شود آیا ادامه می دهید</string>
+    <string name="no">بله</string>
+    <string name="yes">خیر</string>
+    <string name="You_address_saved">آدرس شما ذخیره شد</string>
+    <string name="Save_Money">حساب شما</string>
+    <string name="title_activity_map_ac">Map</string>
+    <string name="use_default_address">استفاده از آدرس پیشفرض</string>
+    <string name="next_page">مرحله بعد</string>
+    <string name="not_have_default_address">شما در حال حاضر هیچ آدرس پیش فرضی ندارید</string>
+    <string name="xadamat">خدمات</string>
+    <string name="xadamat_type">نوع خدمات</string>
+    <string name="xadamat_Day">روز خدمت</string>
+    <string name="xadamat_time">زمان</string>
+    <string name="sended_a_pricer">به زودی خدمات مورد نظر برای شما ارسال می شود</string>
+    <string name="ok_list">لیست ثبت شده ها</string>
+    <string name="Yout_TIme">زمان مورد نظر شما</string>
+    <string name="share_app">ارسال برنامه</string>
+
+    <string name="done_jobs">انجام شده</string>
+    <string name="new_job">جدید</string>
+    <string name="store">فروشگاه</string>
+    <string name="hesab">پروفایل</string>
+
+
+    <string name="xedmat">خدمت : </string>
+    <string name="vaeyat">وضعیت : </string>
+    <string name="show_profile">نمایش پروفایل</string>
+    <string name="call_to_backup">تماس با پشتیبانی</string>
+    <string name="money_rate">گردش مالی</string>
+    <string name="sharj_rate">شارژ</string>
+    <string name="sharj_ing">شارژ کردن</string>
+    <string name="my_jobs">مهارت های من</string>
+    <string name="your_poin">امتیاز شما</string>
+    <string name="my_chart">آمار من</string>
+
+
+    <string name="name">نام : </string>
+    <string name="family">نام خانوادگی : </string>
+    <string name="taahol">وضعیت تاهل : </string>
+    <string name="national_code">کد ملی : </string>
+    <string name="birth_day">تاریخ تولد : </string>
+    <string name="phone_number"> شماره تلفن : </string>
+    <string name="deplom">آخرین مدرک تحصیلی : </string>
+    <string name="home_telphone">تلفن منزل : </string>
+    <string name="job_telphone">تلفن محل کار : </string>
+    <string name="city">شهر : </string>
+    <string name="post_code">کد پستی : </string>
+    <string name="home_address">آدرس منزل : </string>
+    <string name="job_time">کار با نرم افزار : </string>
+    <string name="taxasos">تخصص : </string>
+    <string name="taxasos_about">درباره تخصص : </string>
+
+    <string name="vazYat">وضعیت</string>
+    <string name="user_detailes">درباره کاربر</string>
+    <string name="tel_phone_detailes">ارتباطات</string>
+
+    <string name="you_are_shrjed_your_account_in_this_activity">شما می توانید در این صفحه حساب کاربری خود را شارژ کنید و از مزایای شارژ حساب کاربری بهره مند شوید</string>
+
+    <string name="toman">تومان</string>
+    <string name="your_shrj">شارژ شما</string>
+    <string name="enter_onter">درآمد</string>
+
+
+    <string name="money_20">20 هزار تومان</string>
+    <string name="money_50">50 هزار تومان</string>
+    <string name="money_100">100 هزار تومان</string>
+
+
+    <string name="wite">لطفا چند لحظه صبر کنید</string>
+
+    <string name="get_count">تعداد پیشنهاد : </string>
+
+
+    <string name="send_N_price">ارسال پیشنهاد</string>
+    <string name="show_ditalies">مشاهده وضعیت</string>
+    <string name="title_activity_show_ditales__n_price_ac">Map</string>
+    <string name="Count_prop">تعداد پیشنهاد : </string>
+
+    <string name="done_date">تاریخ ثبت سفارش : </string>
+    <string name="yap_date">تاریخ انجام سفارش : </string>
+    <string name="question_price_ago">سوالات پیش از سفارش : </string>
+    <string name="pricer_text">پیام مشتری : </string>
+    <string name="all_props">پیشنهاد های ارسالی برای این سفارش</string>
+    <string name="date_prop_send">تاریخ ارسال پیشنهاد : </string>
+    <string name="done_your_prop">پیشنهاد شما انتخاب شد</string>
+    <string name="your_prop">پیشنهاد شما : </string>
+    <string name="wite_for_prop">در انتظار برای انتخاب پیشنهاد توسط مشتری</string>
+    <string name="price_is_canceled">سفارش توسط مشتری لغو شد</string>
+    <string name="an_other_priced">پیشنهاد متخصص دیگری پذیرفته شده است</string>
+    <string name="spicial_prop">پیشنهاد ویژه</string>
+    <string name="is_empty">فعلا این آیتم برای شما خالی می باشد</string>
+    <string name="chats">چت ها</string>
+    <string name="chat_by_prcent">گفتگو با مشتری</string>
+
+    <string name="your_prop_money">مبلغ پیشنهادی شما : </string>
+    <string name="your_prop_date">تاریخ پیشنهاد شما : </string>
+    <string name="your_prop_text">متن پیشنهادی شما : </string>
+    <string name="snapp">اسنپ گجت</string>
+    <string name="priceser_counter">سفارش دهنده سرویس </string>
+    <string name="message">پیام</string>
+    <string name="close">بستن</string>
+    <string name="subscription_count">پیشنهاد باقی مانده : </string>
+
+
+    <string name="update_btn">به روز رسانی</string>
+    <string name="cancel">انصراف</string>
+    <string name="det">توضیحات</string>
+    <string name="Next_gam">توضیحات</string>
+    <string name="update">نسخه مورد استفاده شما نسخه قدیمی می باشد برای به روز رسانی نرم افزار می توانید روی گزینه به روز رسانی را لمس کنید</string>
+
+
+    <string name="login_to_profile">ورود به پروفایل</string>
+    <string name="your_eshtrak">اشتراک شما</string>
+    <string name="date_create_in_snapp">سابقه کار در اسنپ گجت</string>
+    <string name="totoal_count_sended_props">تعداد کل پیشنهاد های ارسالی : </string>
+    <string name="count_sended_props">تعداد پیشنهاد های ارسالی ویژه : </string>
+    <string name="spicial_count_sended_props">تعداد پیشنهاد های ارسالی معمولی : </string>
+    <string name="price_n_props">خرید اشتراک</string>
+    <string name="notifications">اطلاعیه ها</string>
+
+    <string name="for_start_job_by_snapp_gadget">برای شروع همکاری با اسنپ گجت</string>
+    <string name="frist_lesen">1- به بخش پروفایل بروید</string>
+    <string name="sec_lesen">2- پرونده تان را کامل کنید</string>
+    <string name="th_lesen">3- دکمه زیر رابزنید تا با اسنپ گجت تماس برقرار شود</string>
+    <string name="for_lesen">4- در تماسی که برقرار شده. برای مصاحبه حضوری وقت بگیرید</string>
+    <string name="get_present_time">دریافت وقت مصاحبه</string>
+
+</resources>

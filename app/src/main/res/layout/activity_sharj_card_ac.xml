@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sharj_card_ac"
+    android:layoutDirection="rtl"
+    android:background="#FFF">
+
+
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="130dp">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layoutDirection="rtl"
+                    android:id="@+id/tool_bar_sharj_card_ac"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/arrow_left_back_icon"
+                        android:layout_margin="@dimen/margin_15"
+                        android:onClick="on_back_arrow_sharj_card_ac"/>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/witt1"
+                        android:layout_margin="8dp"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tool_bar_sharj_card_ac"
+                    android:layoutDirection="rtl"
+                    android:id="@+id/grid_view_panle_shaj_card_ac"
+                    android:visibility="gone">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:layout_margin="@dimen/margin_5"
+                        android:text="@string/you_are_shrjed_your_account_in_this_activity"
+                        android:textSize="14dp"
+                        android:textColor="@color/textcolor1"
+                        android:id="@+id/help_textview_sharj_ac" />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/help_textview_sharj_ac"
+                        android:layout_margin="@dimen/margin_15"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/pos"
+                            android:layout_weight="1"/>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical">
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="45dp"
+                                android:layout_marginRight="35dp"
+                                android:layout_marginLeft="35dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/your_shrj"
+                                    android:textColor="@color/textcolor1"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:layout_marginRight="@dimen/margin_5"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:text="0"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/toman"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:layout_marginRight="@dimen/margin_5"/>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="35dp"
+                                android:layout_marginLeft="35dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/enter_onter"
+                                    android:textColor="@color/textcolor1"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:layout_marginRight="@dimen/margin_5"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:text="0"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/toman"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:layout_marginRight="@dimen/margin_5"/>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pos"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tool_bar_sharj_card_ac"
+                    android:layout_margin="30dp"
+                    android:id="@+id/pos_image_view_sharj_card"/>
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/pos_image_view_sharj_card"
+                    android:layout_marginTop="15dp">
+
+                    <GridView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/price_grid_view_sharj_card_ac"/>
+
+                </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    <!--</ScrollView>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<Button-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/button_border_pay"-->
+                    <!--android:layout_margin="@dimen/margin_5"-->
+                    <!--android:text="@string/money_20"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:onClick="onclick_value_button_sharj_card_ac"-->
+                    <!--android:id="@+id/button_value_20_sharj_ac"/>-->
+
+
+                <!--<Button-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/button_border_pay"-->
+                    <!--android:layout_margin="@dimen/margin_5"-->
+                    <!--android:text="@string/money_50"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:onClick="onclick_value_button_sharj_card_ac"-->
+                    <!--android:id="@+id/button_value_50_sharj_ac"/>-->
+
+                <!--<Button-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/button_border_pay"-->
+                    <!--android:layout_margin="@dimen/margin_5"-->
+                    <!--android:text="@string/money_100"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:onClick="onclick_value_button_sharj_card_ac"-->
+                    <!--android:id="@+id/button_value_100_sharj_ac"/>-->
+
+            <!--</LinearLayout>-->
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_pay"
+                    android:layout_margin="@dimen/margin_5"
+                    android:padding="9dp"
+                    android:hint="@string/toman"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    android:id="@+id/value_edittext_sharj_ac"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/button_border_pay_color"
+                    android:text="@string/Pay"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    android:id="@+id/done_button_sharj_card_ac"
+                    android:enabled="false"
+                    android:onClick="onclick_done_button_sharj_card_ac"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

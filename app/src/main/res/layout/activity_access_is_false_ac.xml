@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Access_is_false_ac">
+
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/header_access_is_false_ac"
+        layout="@layout/header_m_ac"/>
+
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_view_Access_is_false_ac"
+        android:layout_below="@id/header_access_is_false_ac"/>
+
+
+
+
+</RelativeLayout>

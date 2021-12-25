@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_ac">
+
+
+
+
+
+
+    <!--Header Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layoutDirection="rtl"
+        android:id="@+id/tool_bar_profile_ac"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/arrow_left_back_icon"
+            android:layout_margin="@dimen/margin_15"
+            android:onClick="on_back_arrow_profile_ac" />
+
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/witt1"
+        android:layout_margin="8dp"/>
+
+
+
+    </RelativeLayout>
+    <!--Header End-->
+
+
+
+
+
+
+
+
+    <!--Context Start-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/context_ly_profile_ac"
+        android:layout_below="@id/tool_bar_profile_ac"
+        android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl">
+
+
+
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/app_bar_profile_ac"
+                    android:layoutDirection="rtl"
+                    android:background="@color/colorPrimaryDark">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:id="@+id/top_appbar_profile_ac">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layoutDirection="rtl"
+                            android:orientation="horizontal">
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="@dimen/margin_15"
+                                        android:src="@drawable/profile_image_top_resolution_icon"
+                                        android:id="@+id/profile_imageview_profile_ac"/>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.7">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="@dimen/margin_15"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="18dp"
+                                        android:text="رضا فرازی"
+                                        android:id="@+id/name_and_family_textview_profile_ac"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_margin="@dimen/margin_15"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="@dimen/text_view_text_size12"
+                                        android:text="شهر محل خدمت : تهران"
+                                        android:id="@+id/city_textview_profile_ac"
+                                        android:layout_below="@id/name_and_family_textview_profile_ac"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_margin="@dimen/margin_5"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="@dimen/text_view_text_size12"
+                                        android:text="تعداد سفارشات : 0"
+                                        android:id="@+id/price_count_textview_profile_ac"
+                                        android:layout_below="@id/city_textview_profile_ac"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_margin="@dimen/margin_5"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="@dimen/text_view_text_size12"
+                                        android:text="سابقه کار تا کنون : 0"
+                                        android:id="@+id/time_month_textview_profile_ac"
+                                        android:layout_below="@id/price_count_textview_profile_ac"/>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--<android.support.design.widget.AppBarLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/app_bar_layout_profile_ac"-->
+                    <!--android:visibility="gone">-->
+
+
+                    <!--<android.support.design.widget.CollapsingToolbarLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+
+
+
+
+                            <!---->
+
+
+
+
+
+                    <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+
+
+
+                <!--</android.support.design.widget.AppBarLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_bar_profile_ac"
+                    android:background="@color/colorPrimaryDark">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/profile_border_ly">
+
+
+
+                    <!--Vazyat Start-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_15"
+                        android:text="@string/vazYat"
+                        android:textSize="22dp"
+                        android:textColor="@color/textcolor1"
+                        android:layoutDirection="ltr"
+                        android:textDirection="ltr"
+                        android:id="@+id/vazeyat_textview_profile_ac" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/vazeyat_textview_profile_ac"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/margin_15"
+                        android:layoutDirection="rtl"
+                        android:id="@+id/vazyat_panle_profile_ac">
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/name_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/family"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/family_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/taahol"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/is_single_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/national_code"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/national_code_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/birth_day"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/birth_day_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/phone_number"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/phone_number_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/deplom"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/end_licence_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+                    <!--Vazyat End-->
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--Phone details Start-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_15"
+                        android:text="@string/tel_phone_detailes"
+                        android:textSize="22dp"
+                        android:textColor="@color/textcolor1"
+                        android:layoutDirection="ltr"
+                        android:textDirection="ltr"
+                        android:id="@+id/phone_detailes_textview_profile_ac"
+                        android:layout_below="@+id/vazyat_panle_profile_ac"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/phone_detailes_textview_profile_ac"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/margin_15"
+                        android:layoutDirection="rtl"
+                        android:id="@+id/phone_detailes_panle_profile_ac">
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/home_telphone"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/telephone_number_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/job_telphone"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/job_telephone_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/city"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/city_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/post_code"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/tax_code_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/home_address"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/address_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                    </LinearLayout>
+                    <!--Phone details End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--User details Start-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_15"
+                        android:text="@string/user_detailes"
+                        android:textSize="22dp"
+                        android:textColor="@color/textcolor1"
+                        android:layoutDirection="ltr"
+                        android:textDirection="ltr"
+                        android:id="@+id/user_detailes_textview_profile_ac"
+                        android:layout_below="@+id/phone_detailes_panle_profile_ac"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/user_detailes_textview_profile_ac"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/margin_15"
+                        android:layoutDirection="rtl">
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/job_time"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/count_all_jobs_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/taxasos"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/taxasos_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginBottom="@dimen/margin_15">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/taxasos_about"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:textColor="@color/textcolor1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="رضا فرازی"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textSize="@dimen/text_view_text_size16"
+                                android:id="@+id/about_taxasos_text_view_profile_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+                    <!--User details End-->
+
+
+
+
+                    </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+    <!--Context End-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--Wite Start-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/wite_ly_profile_ac">
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/process_bar_profile_ac"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wite"
+            android:layout_below="@id/process_bar_profile_ac"
+            android:fontFamily="@font/is"
+            android:textSize="12dp"/>
+
+
+    </RelativeLayout>
+    <!--Wite End-->
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

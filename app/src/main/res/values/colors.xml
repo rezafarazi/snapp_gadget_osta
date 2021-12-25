@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#9e015c</color>
+    <color name="colorPrimaryDark">#9e015c</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="textcolor1">#222</color>
+    <color name="gray">#CCC</color>
+    <color name="gray2">#f2f2f2</color>
+    <color name="gray3">#fafafa</color>
+    <color name="menu_icon_color">#888</color>
+    <color name="grid_view_back_color">#fefefe</color>
+    <color name="grid_item_back_color">#c1babf</color>
+    <color name="background_header">#f0f0f0</color>
+    <color name="switch_background_color">#00c853</color>
+    <color name="mdtp_accent_color">#880E4F</color>
+    <color name="mdtp_accent_color_dark">#880E4F</color>
+
+
+
+
+
+
+
+    <color name="theme00">#880E4F</color>
+    <color name="theme0">#9e015c</color>
+    <color name="theme1">#4a148c</color>
+    <color name="theme2">#2196f3</color>
+    <color name="theme3">#009688</color>
+    <color name="theme4">#8bc34a</color>
+    <color name="theme5">#ff9800</color>
+    <color name="theme6">#9e9e9e</color>
+
+
+
+    <color name="ic_launcher_background">#9E015C</color>
+
+</resources>

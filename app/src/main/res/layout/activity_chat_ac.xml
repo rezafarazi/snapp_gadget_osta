@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat_ac"
+    android:background="#ffe7f5">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layoutDirection="rtl"
+        android:id="@+id/tool_bar_chat_ac"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/arrow_left_back_icon"
+            android:layout_margin="@dimen/margin_15"
+            android:onClick="on_back_arrow_chat_ac" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/witt1"
+            android:layout_margin="8dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar_chat_ac"
+        android:id="@+id/chats_ly_chat_ac"
+        android:background="#ffe7f5">
+
+
+
+        <!--404-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/empty_ly_chats_ac"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/chat_icon_png"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_empty"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/is"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+        <!--404-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/refresh_ly_chat_ac"
+                android:layout_marginBottom="80dp">
+
+                    <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/chat_view_chat_ac"
+                    android:background="#ffe7f5"
+                    android:transcriptMode="alwaysScroll"
+                    android:stackFromBottom="true" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layoutDirection="rtl"
+                android:layout_margin="15dp"
+                android:background="@drawable/full_white_button">
+
+
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/send_chat_icon"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="onclick_send_chat_btn_chat_ac"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/none_border"
+                    android:padding="2dp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/is"
+                    android:textSize="10dp"
+                    android:textDirection="rtl"
+                    android:id="@+id/new_message_edit_text_view_chat_ac"
+                    android:hint="@string/message"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

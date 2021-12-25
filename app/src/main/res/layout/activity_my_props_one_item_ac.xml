@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_props_one_item_ac"
+    android:background="#FFF">
+
+
+
+    <!--Header Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layoutDirection="rtl"
+        android:id="@+id/tool_bar_my_props_one_item_ac"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/arrow_left_back_icon"
+            android:layout_margin="@dimen/margin_15"
+            android:onClick="on_back_arrow__my_props_one_item_ac"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/witt1"
+            android:layout_margin="8dp"/>
+
+
+
+    </RelativeLayout>
+    <!--Header End-->
+
+
+
+
+
+
+    <!--404-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar_my_props_one_item_ac"
+        android:id="@+id/panle7_my_props_one_item_ac"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/image_view_404_my_props_one_item_ac_ac" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="404"
+                android:textAlignment="center"
+                android:fontFamily="@font/is"
+                android:textSize="14dp"
+                android:id="@+id/text_view_404_my_props_one_item_ac_ac"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--404-->
+
+
+
+
+
+
+    <!--Main Context Start-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar_my_props_one_item_ac"
+        android:id="@+id/refresh_ly_my_props_one_item_ac">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll_view_my_props_one_item_ac"
+            android:fillViewport="true"
+            android:scrollY="0dp"
+            android:focusedByDefault="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl"
+                    android:textDirection="rtl"
+                    android:id="@+id/panle1_my_props_one_item_ac">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_margin="15dp"
+                        android:foreground="@drawable/image_oval"
+                        android:id="@+id/image_view_my_props_one_item_ac"
+                        android:padding="20dp"/>
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.65">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نصب سیستم عامل لینوکس"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:maxLength="30"
+                            android:fontFamily="@font/is"
+                            android:textSize="14dp"
+                            android:id="@+id/text1_view_my_props_one_item_ac__n_price_ac"/>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="@string/Count_prop"
+                                android:textSize="12dp"
+                                android:textColor="#689f38"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="0"
+                                android:textSize="12dp"
+                                android:id="@+id/text2_view_my_props_one_item_ac__n_price_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_marginTop="10dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5px"
+                                android:text="@string/spicial_prop"
+                                android:textSize="8dp"
+                                android:background="@drawable/punk_btn_background"
+                                android:textColor="#FFF"
+                                android:textAlignment="center"
+                                android:padding="7dp"
+                                android:fontFamily="@font/is"
+                                android:elevation="5dp"
+                                android:id="@+id/is_spicial_text_view_my_props_one_item_ac"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"/>
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:background="@drawable/green_btn_background"
+                                android:padding="5dp"
+                                android:elevation="5dp"
+                                android:orientation="horizontal"
+                                android:id="@+id/messages_linear_view_my_props_one_item_ac"
+                                android:onClick="on_click_go_to_chat_ac">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5px"
+                                    android:text="@string/chat_by_prcent"
+                                    android:textSize="8dp"
+                                    android:textColor="#FFF"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/is"/>
+
+
+                                <TextView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_margin="5px"
+                                    android:text="5"
+                                    android:textSize="9dp"
+                                    android:textColor="#689f38"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/is"
+                                    android:background="@drawable/oval_white_background"
+                                    android:id="@+id/messages_counter_text_view_my_props_one_item_ac"/>
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layoutDirection="rtl"
+                    android:textDirection="rtl"
+                    android:id="@+id/panle8_my_props_one_item_ac"
+                    android:layout_below="@id/panle1_my_props_one_item_ac"
+                    android:layout_margin="15dp">
+
+
+
+
+
+
+
+
+                    <!--Phone Ly Start-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blue_border"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/phone_panle_my_props_one_item_ac"
+                        android:onClick="on_click_cell_to_user_my_a_props_one_item_ac">
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/phone_icon_celled"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="5dp"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="@string/your_prop_money"
+                                android:textSize="12dp"
+                                android:textColor="#FFFFFF"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginLeft="5dp"/>
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="@string/your_prop_money"
+                            android:textSize="12dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/phone_number_text_view_my_props_one_item_ac"/>
+
+
+
+
+
+
+                    </RelativeLayout>
+                    <!--Phone Ly End-->
+
+
+
+
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/gray_btn_background2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/done_your_prop"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/is"
+                        android:textSize="10dp"
+                        android:id="@+id/props_wite_btn_my_props_one_item_ac" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/full_color_button"
+                        android:layout_marginTop="-20dp"
+                        android:layoutDirection="rtl">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="@string/your_prop_money"
+                                android:textSize="12dp"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="250000 تومان "
+                                android:textSize="12dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/money_prop_text_view_my_props_one_item_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="@string/your_prop_date"
+                                android:textSize="12dp"
+                                android:textColor="#FFFFFF" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="@string/your_prop_money"
+                                android:textSize="12dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/date_prop_text_view_my_props_one_item_ac"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="@string/your_prop_text"
+                                android:textSize="12dp"
+                                android:textColor="#FFFFFF" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="@string/your_prop_money"
+                                android:textSize="12dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/text_prop_text_view_my_props_one_item_ac"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/panle8_my_props_one_item_ac"
+                    android:id="@+id/panle2_my_props_one_item_ac"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/green_border_background_ly"
+                    android:padding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:textDirection="rtl"
+                        android:layoutDirection="rtl">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="@string/done_date"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="یکشنبه-7 اردیبهشت 1398 ساعت 16:35"
+                            android:textSize="12.9dp"
+                            android:id="@+id/text3_view_my_props_one_item_ac__n_price_ac"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:textDirection="rtl"
+                        android:layoutDirection="rtl">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="@string/yap_date"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="یکشنبه-7 اردیبهشت 1398 ساعت 16:35"
+                            android:textSize="12.9dp"
+                            android:id="@+id/text4_view_my_props_one_item_ac__n_price_ac"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/panle2_my_props_one_item_ac"
+                    android:id="@+id/panle3_my_props_one_item_ac"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textDirection="rtl"
+                        android:layoutDirection="rtl"
+                        android:background="#689f38"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:textDirection="rtl"
+                            android:layoutDirection="rtl"
+                            android:text="@string/question_price_ago"
+                            android:textColor="#FFF"
+                            android:textSize="14dp"
+                            android:layout_margin="5dp"/>
+
+                    </RelativeLayout>
+
+
+
+                    <GridView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#24689F38"
+                        android:id="@+id/questions_grid_view_my_props_one_item_ac" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/panle3_my_props_one_item_ac"
+                    android:id="@+id/panle4_my_props_one_item_ac"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:layoutDirection="rtl"
+                    android:textDirection="rtl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/is"
+                        android:text="@string/pricer_text"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text5_view_my_props_one_item_ac__n_price_ac"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/is"
+                        android:text="متنی که موقع سفارش نوشته ام تا سرویس کار ببیند و اطلاعات کاملی از سفارش من داشته باشد"
+                        android:layout_marginTop="8dp"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:layout_below="@id/panle4_my_props_one_item_ac"
+                    android:id="@+id/panle5_my_props_one_item_ac">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/is"
+                            android:text="@string/all_props"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:id="@+id/text_view_all_props_my_props_one_item_ac"/>
+
+                        <View
+                            android:layout_width="300dp"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/text_view_all_props_my_props_one_item_ac"
+                            android:layout_margin="10dp"/>
+
+                    </RelativeLayout>
+
+
+
+                    <GridView
+                        android:layout_height="200dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/all_props_grid_view_my_props_one_item_ac_ac"
+                        android:verticalScrollbarPosition="right"
+                        android:numColumns="3"
+                        android:layoutDirection="rtl"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:foreground="@drawable/maps_background_ly1"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/panle5_my_props_one_item_ac"
+                    android:id="@+id/panle6_my_props_one_item_ac"
+                    >
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:id="@+id/my_props_one_item_ac_ac_map_frag" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--Main Context End-->
+
+
+</RelativeLayout>

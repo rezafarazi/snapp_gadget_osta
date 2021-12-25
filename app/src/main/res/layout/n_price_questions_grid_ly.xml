@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textDirection="rtl"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:id="@+id/questions_grid_view_Main_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/is"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:text="@string/question_price_ago"
+            android:textColor="#2f2f2f"
+            android:textSize="14dp"
+            android:layout_margin="5dp"
+            android:id="@+id/text1_view_n_price_querstions_grid_ly"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/is"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:text="@string/question_price_ago"
+            android:textColor="#2f2f2f"
+            android:textSize="12dp"
+            android:layout_margin="5dp"
+            android:id="@+id/text2_view_n_price_querstions_grid_ly"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

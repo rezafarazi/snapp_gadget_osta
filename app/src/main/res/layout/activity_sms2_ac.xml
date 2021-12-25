@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sms2_ac"
+    android:background="@color/colorAccent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/log4"
+            android:layout_margin="25dp"
+            android:id="@+id/sms2_ac_top_image"/>
+
+
+
+
+
+
+
+
+
+
+
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_centerInParent="true"
+            android:layout_height="50dp"
+            android:hint="@string/shaps"
+            android:background="@drawable/edit_text_lay1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/sms2_ac_top_image"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Enter_virify_code"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="@dimen/edit_text_text_size14"
+            android:maxLength="4"
+            android:drawableRight="@drawable/email_icon"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Enter_virify_code"
+            android:layout_centerInParent="true"
+            android:text="@string/Plase_wite_Sms"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/text_view_text_size12"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/text_help_sms2_ac"
+            android:textAlignment="center"/>
+
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Enter_Your_Phone_Number_Done"
+            android:textColor="#FFF"
+            android:background="@drawable/full_color_button"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/button_text_text_size10"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/text_help_sms2_ac"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:onClick="onclick_done_btn_check_digits"
+            android:id="@+id/done_btn_sms2_ac"
+            android:drawableRight="@drawable/done_icon"/>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/done_btn_sms2_ac"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_view_text_size12"
+            android:text="@string/number_is_false"
+            android:textColor="@color/colorPrimary"
+            android:onClick="onclick_change_Phone_number"/>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:id="@+id/main_ly_one_chat_colnum_ly"
+        android:layout_margin="8dp">
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/one_chat_colnum_ly_title"
+            android:text="سفارش دهنده سفارش 15421"
+            android:fontFamily="@font/is"
+            android:textSize="12dp"
+            android:layout_weight="0.1"
+            android:textColor="@color/textcolor1"/>
+
+
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="5"
+            android:textSize="10dp"
+            android:background="@drawable/oval_green_background"
+            android:textColor="#FFF"
+            android:textAlignment="center"
+            android:fontFamily="@font/is"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="11dp"
+            android:paddingLeft="11dp"
+            android:id="@+id/one_colnum_ly_grid_3_messages"
+            android:elevation="5dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/one_chat_colnum_ly_text"
+                android:text="سفارش دهنده سفارش 15421"
+                android:fontFamily="@font/is"
+                android:textSize="10dp"
+                android:layout_weight="0.1"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/one_chat_colnum_ly_time"
+                android:text="12:24 ب.ظ"
+                android:fontFamily="@font/is"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/one_chat_colnum_ly_see"
+                android:src="@drawable/see_2_icon"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+</LinearLayout>

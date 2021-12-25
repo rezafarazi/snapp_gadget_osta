@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sms_panle_ac"
+    android:background="@color/colorAccent">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/margin_50">
+
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/log4"
+            android:layout_margin="25dp"
+            android:id="@+id/sms_ac_top_image"/>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Enter_Your_Phone_Number"
+            android:layout_below="@id/sms_ac_top_image"
+            android:layout_margin="15dp"
+            android:textSize="@dimen/text_view_text_size12"
+            android:id="@+id/Enter_Your_Phone_Number" />
+
+
+
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:hint="@string/Enter_Your_Phone_Number_Hint"
+            android:background="@drawable/edit_text_lay1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/Enter_Your_Phone_Number"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Enter_Your_Phone_Number_Text_Box"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="@dimen/edit_text_text_size12"
+            android:maxLength="11"
+            android:textDirection="ltr"
+            android:drawableRight="@drawable/phone_icon"/>
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Enter_Your_Phone_Number_Done"
+            android:textColor="#FFF"
+            android:background="@drawable/full_color_button"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/button_text_text_size10"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/Enter_Your_Phone_Number_Text_Box"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:onClick="onclick_on_done_Sms_ac_done_btn"
+            android:drawableRight="@drawable/done_icon"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

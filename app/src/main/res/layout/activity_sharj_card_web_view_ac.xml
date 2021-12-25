@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sharj_card_web_view_ac">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layoutDirection="rtl"
+        android:id="@+id/tool_bar_sharj_card_web_view_ac"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/arrow_left_back_icon"
+            android:layout_margin="@dimen/margin_15"
+            android:onClick="on_back_arrow_sharj_card_web_view_ac"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/witt1"
+            android:layout_margin="8dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar_sharj_card_web_view_ac"
+        android:id="@+id/web_view_shrj_card_web_view_ac" />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_border_pay_color"
+        android:text="اتمام پرداخت"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_view_text_size14"
+        android:onClick="onclick_end_pay_event_sharj_card_view_ac"
+        android:layout_margin="@dimen/margin_15" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_frag">
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        layout="@layout/header_m_ac"
+        android:id="@+id/header_ly_home_frag_ly"/>
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_home_frag"
+        android:layout_below="@id/header_ly_home_frag_ly">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/empty_ly_home_frag">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/empty_ly_chats_frag"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/empty_icon1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_empty"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/is"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/grid_view_home_frag"
+                android:visibility="gone"/>
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_ly_home_frag_ly"
+        android:id="@+id/tips_ly_home_frag_ly"
+        android:visibility="gone">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/tips"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/tip_icon_home_frag_ly"/>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tip_icon_home_frag_ly"
+                    android:id="@+id/header_tips_home_frag_ly"
+                    android:fontFamily="@font/is"
+                    android:textColor="@color/textcolor1"
+                    android:text="@string/for_start_job_by_snapp_gadget"
+                    android:textSize="14dp"/>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/header_tips_home_frag_ly"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp"
+                    android:textDirection="rtl"
+                    android:layoutDirection="rtl"
+                    android:id="@+id/lessend_tip_home_frag_ly">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/tip_icon_home_frag_ly"
+                        android:fontFamily="@font/is1"
+                        android:text="@string/frist_lesen"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/tip_icon_home_frag_ly"
+                        android:fontFamily="@font/is1"
+                        android:text="@string/sec_lesen"
+                        android:textSize="12dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/tip_icon_home_frag_ly"
+                        android:fontFamily="@font/is1"
+                        android:text="@string/th_lesen"
+                        android:textSize="12dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/tip_icon_home_frag_ly"
+                        android:fontFamily="@font/is1"
+                        android:text="@string/for_lesen"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lessend_tip_home_frag_ly"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/green_fosfor_btn_background"
+                    android:onClick="onclick_cell_to_backup"
+                    android:text="@string/get_present_time"
+                    android:textColor="#FFF"
+                    tools:ignore="OnClick" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

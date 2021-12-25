@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="-5dp"
+    android:elevation="5dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark" >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/is"
+                    android:textSize="10dp"
+                    android:text="10"
+                    android:textColor="#FFF"
+                    android:id="@+id/text_view_1_header_m_ac"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="2dp"
+                    android:layout_alignParentRight="true"
+                    android:layoutDirection="rtl"
+                    android:textDirection="rtl">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/is"
+                        android:textSize="10dp"
+                        android:text="@string/subscription_count"
+                        android:textColor="#FFF"/>
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/is"
+                        android:textSize="10dp"
+                        android:text="10"
+                        android:textColor="#FFF"
+                        android:id="@+id/text_view_2_header_m_ac"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/witt1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="180dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/image_view_header_m_ac" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

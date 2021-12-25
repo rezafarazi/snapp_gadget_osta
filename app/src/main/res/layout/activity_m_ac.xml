@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".m_ac"
+    android:background="@color/colorAccent">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Home Frag Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/home_ly_m_ac">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.osta.ostasnappgadget.home_frag"
+            android:id="@+id/home_frag_m_ac"/>
+
+    </RelativeLayout>
+    <!--Home Frag End-->
+
+
+
+
+
+
+
+    <!--New Job Frag Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/new_job_ly_m_ac"
+        android:visibility="gone">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.osta.ostasnappgadget.my_all_prop_frag"
+            android:id="@+id/new_job_frag_m_ac"/>
+
+    </RelativeLayout>
+    <!--Now Job Frag End-->
+
+
+
+
+
+
+
+    <!--Done Job Frag Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/done_job_ly_m_ac"
+        android:visibility="gone">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.osta.ostasnappgadget.done_job_frag"
+            android:id="@+id/done_job_frag_m_ac"/>
+
+    </RelativeLayout>
+    <!--Done Job Frag End-->
+
+
+
+
+
+
+
+    <!--Store Frag Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/store_ly_m_ac"
+        android:visibility="gone">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.osta.ostasnappgadget.store_frag"
+            android:id="@+id/store_frag_m_ac"/>
+
+    </RelativeLayout>
+    <!--Store Frag End-->
+
+
+
+
+
+
+
+
+
+    <!--Chats Frag Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/chats_ly_m_ac"
+        android:visibility="gone">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.osta.ostasnappgadget.chats_frag"
+            android:id="@+id/chats_frag_m_ac"/>
+
+    </RelativeLayout>
+    <!--ChatsFrag End-->
+
+
+
+
+
+
+
+
+
+    <!--Profile Frag Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/profile_ly_m_ac"
+        android:visibility="gone">
+
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gagit.snapp.osta.ostasnappgadget.profile_frag"
+            android:id="@+id/profile_frag_m_ac"/>
+
+
+    </RelativeLayout>
+    <!--Profile Frag End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_menu"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_header"
+        android:id="@+id/bottom_navigation_view_m_ac"
+        android:layoutDirection="rtl" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

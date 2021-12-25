@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical"
+            android:layoutDirection="rtl"
+            android:background="@drawable/item_background_ly_3"
+            android:foreground="@drawable/ripple"
+            android:elevation="5dp"
+            android:layout_margin="8dp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <ImageView
+                    android:layout_width="210dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/profile_icon"
+                    android:id="@+id/one_colnum_ly_grid_2_image_view" />
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:text="@string/date_prop_send"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/is"
+                                android:textColor="@color/textcolor1"
+                                android:id="@+id/one_colnum_ly_grid_3_title"/>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:text="@string/Count_prop"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/is"
+                                    android:textColor="#9e015c" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:text="51"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/is"
+                                    android:id="@+id/one_colnum_ly_grid_3_count"/>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:text="@string/your_prop"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/is"
+                                    android:textColor="#9e015c" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:text="51"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/is"
+                                    android:id="@+id/one_colnum_ly_grid_3_your_prop"/>
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5px"
+                                android:text="@string/spicial_prop"
+                                android:textSize="8dp"
+                                android:background="@drawable/punk_btn_background"
+                                android:textColor="#FFF"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:fontFamily="@font/is"
+                                android:elevation="5dp"
+                                android:id="@+id/one_colnum_ly_grid_3_spicial_prop"/>
+
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_marginTop="10dp">
+
+
+                                <TextView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:text="5"
+                                    android:textSize="10dp"
+                                    android:background="@drawable/oval_green_background"
+                                    android:textColor="#FFF"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/is"
+                                    android:layout_centerHorizontal="true"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:paddingRight="11dp"
+                                    android:paddingLeft="11dp"
+                                    android:id="@+id/one_colnum_ly_grid_3_messages"
+                                    android:elevation="5dp"/>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--bottom Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/date_prop_send"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/is"
+                        android:textColor="#9e015c" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="51"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/is"
+                        android:id="@+id/one_colnum_ly_grid_3_text_view_date"/>
+
+                </LinearLayout>
+
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/green_btn_background"
+                    android:text="@string/done_your_prop"
+                    android:textColor="#FFF"
+                    android:fontFamily="@font/is"
+                    android:textSize="12dp"
+                    android:id="@+id/one_colnum_ly_grid_3_button_ditales"/>
+
+
+
+
+
+            </LinearLayout>
+            <!--bottom End-->
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

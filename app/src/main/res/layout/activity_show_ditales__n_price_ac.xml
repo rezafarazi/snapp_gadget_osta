@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Show_ditales_N_price_ac"
+    android:background="@color/colorAccent">
+
+
+
+    <!--Header Start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layoutDirection="rtl"
+        android:id="@+id/tool_bar_show_ditales_n_price"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/arrow_left_back_icon"
+            android:layout_margin="@dimen/margin_15"
+            android:onClick="on_back_arrow__show_ditales_n_proposal_ac"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/witt1"
+            android:layout_margin="8dp"/>
+
+
+
+    </RelativeLayout>
+    <!--Header End-->
+
+
+
+
+
+
+    <!--404-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar_show_ditales_n_price"
+        android:id="@+id/panle7_show_ditales"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/image_view_404_show_ditales_n_price_ac" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="404"
+                android:textAlignment="center"
+                android:fontFamily="@font/is"
+                android:textSize="14dp"
+                android:id="@+id/text_view_404_show_ditales_n_price_ac"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--404-->
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar_show_ditales_n_price"
+        android:id="@+id/refresh_ly_show_ditales_n_price">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll_view_show_ditales_n_price"
+            android:fillViewport="true"
+            android:scrollY="0dp"
+            android:focusedByDefault="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl"
+                    android:textDirection="rtl"
+                    android:id="@+id/panle1_show_ditales">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_margin="15dp"
+                        android:foreground="@drawable/image_oval"
+                        android:id="@+id/image_view_show_ditales__n_price_ac"
+                        android:padding="20dp"/>
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.65">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نصب سیستم عامل لینوکس"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:maxLength="30"
+                            android:fontFamily="@font/is"
+                            android:textSize="14dp"
+                            android:id="@+id/text1_view_show_ditales__n_price_ac"/>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="@string/Count_prop"
+                                android:textSize="12dp"
+                                android:textColor="#689f38"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/is"
+                                android:text="0"
+                                android:textSize="12dp"
+                                android:id="@+id/text_view2_show_ditales__n_price_ac"/>
+
+                        </LinearLayout>
+
+
+
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/green_btn_background"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#FFF"
+                            android:fontFamily="@font/is"
+                            android:text="@string/send_N_price"
+                            android:textSize="10dp"
+                            android:elevation="1dp"
+                            android:id="@+id/btn_prop_show_ditales__n_price_ac"
+                            android:onClick="onclick_send_new_prop"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/panle1_show_ditales"
+                    android:id="@+id/panle2_show_ditales"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/green_border_background_ly"
+                    android:padding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:textDirection="rtl"
+                        android:layoutDirection="rtl">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="@string/done_date"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="یکشنبه-7 اردیبهشت 1398 ساعت 16:35"
+                            android:textSize="12.9dp"
+                            android:id="@+id/text3_view_show_ditales__n_price_ac"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:textDirection="rtl"
+                        android:layoutDirection="rtl">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="@string/yap_date"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:text="یکشنبه-7 اردیبهشت 1398 ساعت 16:35"
+                            android:textSize="12.9dp"
+                            android:id="@+id/text4_view_show_ditales__n_price_ac"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/panle2_show_ditales"
+                    android:id="@+id/panle3_show_ditales"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textDirection="rtl"
+                        android:layoutDirection="rtl"
+                        android:background="#689f38"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/is"
+                            android:textDirection="rtl"
+                            android:layoutDirection="rtl"
+                            android:text="@string/question_price_ago"
+                            android:textColor="#FFF"
+                            android:textSize="14dp"
+                            android:layout_margin="5dp"/>
+
+                    </RelativeLayout>
+
+
+
+                    <GridView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#24689F38"
+                        android:id="@+id/questions_grid_view_show_ditales__n_price_ac" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/panle3_show_ditales"
+                    android:id="@+id/panle4_show_ditales"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:layoutDirection="rtl"
+                    android:textDirection="rtl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/is"
+                        android:text="@string/pricer_text"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text5_view_show_ditales__n_price_ac"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/is"
+                        android:text="متنی که موقع سفارش نوشته ام تا سرویس کار ببیند و اطلاعات کاملی از سفارش من داشته باشد"
+                        android:layout_marginTop="8dp"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:layout_below="@id/panle4_show_ditales"
+                    android:id="@+id/panle5_show_ditales">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/is"
+                            android:text="@string/all_props"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:id="@+id/text_view_all_props_show_ditales_n_price"/>
+
+                        <View
+                            android:layout_width="300dp"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/text_view_all_props_show_ditales_n_price"
+                            android:layout_margin="10dp"/>
+
+                    </RelativeLayout>
+
+
+
+                    <GridView
+                        android:layout_height="200dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/all_props_grid_view_show_ditales_n_price_ac"
+                        android:verticalScrollbarPosition="right"
+                        android:numColumns="3"
+                        android:layoutDirection="rtl"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:foreground="@drawable/maps_background_ly1"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/panle5_show_ditales"
+                    android:id="@+id/panle6_show_ditales"
+                    >
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:id="@+id/show_ditales_n_price_ac_map_frag" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

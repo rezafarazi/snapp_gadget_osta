@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+
+
+
+
+    <!--no Action bar 1 Start-->
+    <style name="no_action_bar_1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/is2</item>
+        <item name="android:windowEnterAnimation">@anim/activity_anim</item>
+        <item name="android:windowExitAnimation">@anim/activity_anim</item>
+    </style>
+    <!--no Action bar 1 End-->
+
+
+
+
+
+
+
+    <!--no Action bar 2 Start-->
+    <style name="dialog_theme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/is2</item>
+        <item name="android:windowEnterAnimation">@anim/activity_anim</item>
+        <item name="android:windowExitAnimation">@anim/activity_anim</item>
+    </style>
+    <!--no Action bar 2 End-->
+
+
+
+
+
+</resources>

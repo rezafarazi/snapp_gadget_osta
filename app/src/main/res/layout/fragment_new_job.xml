@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_job_ac">
+
+
+
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        layout="@layout/header_m_ac2"
+        android:id="@+id/header_ly_new_job_frag_ly"/>
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_new_hob_frag"
+        android:layout_below="@id/header_ly_new_job_frag_ly">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/new_job_grid_new_job_frag"/>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+</RelativeLayout>
